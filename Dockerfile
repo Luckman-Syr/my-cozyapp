@@ -1,6 +1,6 @@
 From node:16
-WORKDIR /src
-COPY package.json /src
+WORKDIR /app
+COPY package.json /app
 RUN yarn install
-COPY . /src
+COPY . /app
 CMD ["yarn", "start"]
